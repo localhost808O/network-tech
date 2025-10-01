@@ -1,17 +1,43 @@
-Проект для лабораторных работ по сетевым технологиям.
+````markdown
+# 2 Лабораторная работа по сетевым технологиям
 
+## Установка и проверка .NET
+```bash
 brew install dotnet
-dotnet --version (проверить что .NET 8.0 SDK или выше)
+dotnet --version   # должно быть .NET 8.0 SDK или выше
+````
 
+## Клонирование проекта
+
+```bash
 git clone https://github.com/localhost808O/network-tech.git
 cd network-tech
+```
 
-Сервер
-(Изменить ip port на свой в Server/Server/Utils/Configs/ServerConfig.json)
+---
+
+## Сервер
+
+1. Измените IP и порт в файле:
+   **`Server/Server/Utils/Configs/ServerConfig.json`**
+
+2. Запуск сервера:
+
+```bash
 cd Server
 dotnet run
+```
 
-Клиент
-(Изменить ip port на свой в Client/Client/Property/Config.json)
+---
+
+## Клиент
+
+1. Измените IP и порт в файле:
+   **`Client/Client/Property/Config.json`**
+2. Запуск клиента:
+
+```bash
 cd Client
 dotnet run
+```
+
