@@ -95,4 +95,8 @@ public class FileWorker : IFileWorker, IDisposable
     {
         CloseCurrentFileStream();
     }
+    ~FileWorker() {
+        Dispose();
+    }
+
 }
