@@ -3,6 +3,11 @@
 
 ## Установка и проверка .NET
 ```bash
+linux
+sudo apt install dotnet-sdk-8.0
+dotnet --version 
+
+macos
 brew install dotnet
 dotnet --version   # должно быть .NET 8.0 SDK или выше
 ````
