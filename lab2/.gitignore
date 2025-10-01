@@ -1,0 +1,23 @@
+﻿# .NET build outputs
+bin/
+obj/
+
+# IDE files
+.vs/
+.idea/
+*.user
+*.suo
+
+# Runtime files
+*.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# NuGet
+.nuget/
+packages/
+
+# Exceptions
+*.csproj.user

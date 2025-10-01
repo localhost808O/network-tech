@@ -1,0 +1,6 @@
+{
+  "Address": "${SERVER_ADDRESS}",
+  "Dns": "${SERVER_DNS}",
+  "Port": "${SERVER_PORT}",
+  "MaxConnections": "${MAX_CONNECTIONS}"
+}

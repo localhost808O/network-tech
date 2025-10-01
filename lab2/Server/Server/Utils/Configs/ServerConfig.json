@@ -1,0 +1,6 @@
+{
+  "Address": "192.168.111.56",
+  "Dns": "5",
+  "Port": 6969,
+  "MaxConnections": 100
+}
