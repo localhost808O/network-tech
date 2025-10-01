@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Text;
 using System.Net.Sockets;
 using Server.Core.Interfaces;
@@ -15,7 +15,8 @@ public class LogicServer
     private readonly ILogger<LogicServer> _logger;
     private ServerSetUp _server;
    
-    private const string PathToConfig = "Utils\\Configs\\ServerConfig.json";
+    // private const string PathToConfig = "Utils/Configs/ServerConfig.json";
+    private readonly string PathToConfig = Path.Combine("Utils", "Configs", "ServerConfig.json");
     public LogicServer()
     {
         _server = new ServerSetUp(PathToConfig);
@@ -50,8 +51,9 @@ public class LogicServer
     private async Task LoopClients()
     {
         var ipAddress = IPAddress.Parse(_server.serverProperty.Address);
-        var ipEndPoint = new IPEndPoint(ipAddress, _server.serverProperty.Port);
-        TcpListener tcpListener = new TcpListener(ipEndPoint);
+        //var ipEndPoint = new IPEndPoint(ipAddress, _server.serverProperty.Port);
+        var ipendPoint1 = new IPEndPoint(IPAddress.Any, _server.serverProperty.Port);
+        TcpListener tcpListener = new TcpListener(ipendPoint1);
         tcpListener.Start();
         while (true)
         { 
